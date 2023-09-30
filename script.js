@@ -1,16 +1,14 @@
 //your JS code here. If required.
 //your JS code here. If required.
-  let height=this.innerHeight;
-    let width=this.innerWidth;
-   let div=document.getElementById("sizeInfo");
-    let h=div.firstChild;
-    h.innerText="Width: "+width+" and Height: "+height;  
-window.addEventListener("resize",function(){
-    let height=this.innerHeight;
-    let width=this.innerWidth;
-   let div=document.getElementById("sizeInfo");
-    let h=div.firstChild;
- 
-    h.innerText="Width: "+width+" and Height: "+height; 
-  
-  })
+// const sizeElement = document.getElementById("sizeInfo");
+
+
+// document.body.append(sizeElement);
+//  window.onresize = function(){
+// 	 sizeElement.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+//  }
+function getSize() {
+			var w = document.documentElement.clientWidth;
+			var h = document.documentElement.clientHeight;
+			document.getElementById('sizeInfo').innerHTML = "<h1>Width: " + w + " and Height: " + h + "</h1>";
+		}
